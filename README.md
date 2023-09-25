@@ -1,2 +1,2 @@
 # SIH_Project
-This is our Smart India Hackathon
+This is for our Smart India Hackathon prototype
