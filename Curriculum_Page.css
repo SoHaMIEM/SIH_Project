@@ -1,0 +1,404 @@
+body {
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+/* Body Header */
+
+#body-header {
+    height: 65vh;
+    opacity: 0.8;
+    background-image: url(https://images.unsplash.com/photo-1472289065668-ce650ac443d2?auto=format&fit=crop&q=80&w=2069&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 1.2rem;
+}
+
+/* Horizontal Lists */
+
+.horizontal-list {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.horizontal-list li a {
+    color: rgb(29, 5, 73);
+    text-decoration: none;
+}
+
+.nav-menu li a {
+    transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover {
+    color:#214;
+    border-bottom: 1px solid black;
+    font-weight: 700;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* SyllaWeave and Social Icons*/
+
+#name-social-container {
+    margin-top: 20vh;
+}
+
+#my-name {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: rgb(8, 1, 40);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+
+/*Section Classes*/
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+section:nth-child(2n) {
+    background-color: #9e9b9b29;
+}
+
+section:nth-child(2n + 1) {
+    background-color: white;
+}
+
+.section-heading {
+    width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+}
+
+.section-heading span {
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+
+/* About */
+
+#description {
+    display: flex;
+    flex-direction: row; /* Arrange the children horizontally */
+    align-items: center; /* Center vertically within the container */
+}
+
+#description-image {
+    flex: 1; /* Take up 50% of the available width */
+    padding: 20px; /* Add some spacing around the image */
+    max-width: 700px;
+    max-height: 800px;
+    overflow: hidden;
+    object-fit: contain;
+}
+
+#description-image img{
+    height: 800px;
+    width: 700px;
+}
+
+#description-content {
+    font-size: 20px;
+    flex: 1; /* Take up 50% of the available width */
+    padding: 20px; /* Add some spacing around the text content */
+}
+
+#description-content h2 {
+    font-weight: 200;
+}
+
+/* Login and Sign-Up Button */
+
+.container-login-signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    z-index: inherit;
+    text-align: center;
+}
+
+
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    margin: 10px;
+}
+
+.login {
+    background: linear-gradient(to right, #3b56d2, #374ce5);
+    color: #fff;
+}
+
+.signup {
+    background: linear-gradient(to right, #5035e7, #4925e9);
+    color: #fff;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+/* Add a simple pulse animation to the buttons */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.btn.login:hover,
+.btn.signup:hover {
+    animation: pulse 1s infinite;
+}
+
+/*Curriculum Video*/
+
+#curriculum-design{
+    height: auto;
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+#curriculum-design p{
+    padding: 10px;
+    width: 70%;
+    text-align: justify;
+    color: grey;
+    line-height: 28px;
+    font-size: 1.1rem;
+    margin: auto;
+}
+
+#curriculum-design dl{
+    padding: 10px;
+    width: 70%;
+    text-align: justify;
+    color: grey;
+    line-height: 28px;
+    font-size: 1.1rem;
+    margin: auto;
+}
+
+/* FOOTER
+------------------------------------*/
+/* FOOTER STYLES */
+footer {
+    background: #222;
+    color: #d3d4d6;
+    padding: 70px 0;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribute columns evenly */
+}
+
+ul {
+    list-style: none;
+    padding: 0; /* Remove default padding */
+}
+
+.footer-col {
+    flex: 1; /* Distribute columns evenly */
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+/* RESPONSIVE STYLES */
+@media (max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+
+
+  /* Curriculum Section Viewer*/
+
+
+  div.scrollmenu {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+  }
+  
+  div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  div.scrollmenu a:hover {
+    background-color: #777;
+  }
+
+  .carousel-inner img{
+    height: 400px;
+    
+  }
+
+  /* Create Your Own Curriculum*/
+
+  .clr-btn{
+    background: linear-gradient(to right, #ff6b6b, #ffb88c);
+    color: #fff;
+  }
+
+  #about-para {
+    padding: 10px;
+    width: 70%;
+    text-align: justify;
+    color: grey;
+    line-height: 28px;
+    font-size: 1.1rem;
+    margin: auto;
+}
+
+#create-curriculum-clr{
+    background: linear-gradient(135deg, #3494E6, #EC6EAD);
+    color: #ffffff;
+}
+
+#innovative-design::before {
+    content: "";
+    background-image: url(https://dm0qx8t0i9gc9.cloudfront.net/watermarks/image/rDtN98Qoishumwih/abstract-white-background-with-black-floral-pattern_zkFOeAq__SB_PM.jpg);
+    background-size: cover;
+    opacity: 0.7; /* Adjust the opacity as needed */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+input{
+    
+}
+
+#innovative-design {
+    position: relative;
+}
+
+/* The rest of your existing CSS for the section, headings, and paragraphs */
+
+
+#innovative-design h2,
+#innovative-design p {
+    opacity: 1;
+}
+
+
+#about-para{
+    color: black;
+}
